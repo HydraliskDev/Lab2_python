@@ -7,12 +7,12 @@ def task1() -> int:
     Буквы X и Z встречаются только на двух первых позициях,
     буквы A, B, C, D, E — только на двух последних.
     """
-    first = ['X', 'Z']              # позиции 1-2
-    last = ['A', 'B', 'C', 'D', 'E']  # позиции 3-4
+    first = ['X', 'Z']              
+    last = ['A', 'B', 'C', 'D', 'E']  
 
-    words = product(first, first, last, last)  # перебор всех комбинаций
-    return sum(1 for _ in words)                # считаем количество
+    words = product(first, first, last, last)  
+    return sum(1 for _ in words)                
 
 
 if __name__ == '__main__':
-    print(task1())  # 100
+    print(task1()) 
