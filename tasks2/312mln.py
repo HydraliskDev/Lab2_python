@@ -1,4 +1,7 @@
-def divisors(n: int) -> list:
+'''#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+def divisors(n) -> list:
     result = []
     i = 1
     while i * i <= n:
@@ -9,7 +12,7 @@ def divisors(n: int) -> list:
         i += 1
     result.sort()
     return result
-def task3(start: int = 312614, end: int = 312651) -> list:
+def task3(start = 312614, end = 312651) -> list:
     found = []
     for n in range(start, end + 1):
         d = divisors(n)

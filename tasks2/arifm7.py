@@ -1,4 +1,6 @@
-def to_base(n: int, base: int) -> str:
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+def to_base(n, base) -> str:
     """Перевод натурального числа n в систему счисления с основанием base."""
     if n == 0:
         return '0'
