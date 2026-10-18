@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-def to_base(n, base) -> str:
+'''#!/usr/bin/env python3
+# -*- coding: utf-8 -*-'''
+def to_base(n, base):
     """Перевод натурального числа n в систему счисления с основанием base."""
     if n == 0:
         return '0'
@@ -11,13 +11,11 @@ def to_base(n, base) -> str:
         n //= base
     return result
 
-def task2() -> int:
+def task2():
     """
     Значение выражения 49^10 + 7^30 - 49 записали в 7-чной системе.
-    Сколько цифр 6 содержится в записи?
     """
     value = 49 ** 10 + 7 ** 30 - 49
     return to_base(value, 7).count('6')
 
-if __name__ == '__main__':
-    print(task2())  # 18
+print(task2())  

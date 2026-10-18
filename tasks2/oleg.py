@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+'''#!/usr/bin/env python3
+# -*- coding: utf-8 -*-'''
 from itertools import product
 
-
-def task1() -> int:
+def task1():
     """
     Олег составляет 4-буквенные кодовые слова из букв A, B, C, D, E, X, Z.
     Буквы X и Z встречаются только на двух первых позициях,
@@ -16,5 +15,5 @@ def task1() -> int:
     return sum(1 for _ in words)                
 
 
-if __name__ == '__main__':
+if __name__ == '__main':
     print(task1()) 
