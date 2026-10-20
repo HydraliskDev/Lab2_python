@@ -59,7 +59,6 @@ last = ['A', 'B', 'C', 'D', 'E']  # позиции 3-4
 words = product(first, first, last, last)
 return sum(1 for _ in words)
 
-if __name__ == '__main__':
 print(task1())
 
 ```
