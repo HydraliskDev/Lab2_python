@@ -14,6 +14,4 @@ def task1():
     words = product(first, first, last, last)  
     return sum(1 for _ in words)                
 
-
-if __name__ == '__main':
-    print(task1()) 
+print(task1()) 
